@@ -1,0 +1,3763 @@
+{
+  "schema": 1,
+  "generatedAt": null,
+  "app": {
+    "name": "Interval Tracks",
+    "repo": "martinctc/interval-tracks",
+    "version": "0.1.0"
+  },
+  "tracks": [
+    {
+      "slug": "classic-hiit-45-15--techno",
+      "title": "12 × 45s / 15s — Techno",
+      "preset": "classic-hiit-45-15",
+      "presetSummary": "12 rounds of 45s work / 15s rest",
+      "structure": {
+        "label": "12 × 45s / 15s",
+        "kind": "hiit",
+        "workSec": 45,
+        "restSec": 15,
+        "reps": 12,
+        "continuous": false
+      },
+      "durationSec": 730,
+      "style": "techno",
+      "styleLabel": "Techno",
+      "bpm": 144,
+      "snapped": true,
+      "key": "A minor",
+      "music": "dirt",
+      "seed": 1498225208,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/classic-hiit-45-15--techno.mp3",
+        "bytes": 11681167,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "a4089ada61a7429ee11e66e5ecb4141da223b0802df5eade4fbf41aa23c43af8"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 5
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 5,
+          "endSec": 50
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 50,
+          "endSec": 65
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 65,
+          "endSec": 110
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 110,
+          "endSec": 125
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 125,
+          "endSec": 170
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 170,
+          "endSec": 185
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 185,
+          "endSec": 230
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 230,
+          "endSec": 245
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 245,
+          "endSec": 290
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 290,
+          "endSec": 305
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 305,
+          "endSec": 350
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 350,
+          "endSec": 365
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 365,
+          "endSec": 410
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 410,
+          "endSec": 425
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 425,
+          "endSec": 470
+        },
+        {
+          "kind": "rest",
+          "rep": 8,
+          "startSec": 470,
+          "endSec": 485
+        },
+        {
+          "kind": "work",
+          "rep": 9,
+          "startSec": 485,
+          "endSec": 530
+        },
+        {
+          "kind": "rest",
+          "rep": 9,
+          "startSec": 530,
+          "endSec": 545
+        },
+        {
+          "kind": "work",
+          "rep": 10,
+          "startSec": 545,
+          "endSec": 590
+        },
+        {
+          "kind": "rest",
+          "rep": 10,
+          "startSec": 590,
+          "endSec": 605
+        },
+        {
+          "kind": "work",
+          "rep": 11,
+          "startSec": 605,
+          "endSec": 650
+        },
+        {
+          "kind": "rest",
+          "rep": 11,
+          "startSec": 650,
+          "endSec": 665
+        },
+        {
+          "kind": "work",
+          "rep": 12,
+          "startSec": 665,
+          "endSec": 710
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 710,
+          "endSec": 730
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 2,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 5,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 27.5,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 50,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 65,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 87.5,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 110,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 125,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 147.5,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 170,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 185,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 207.5,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 230,
+          "rep": 4
+        },
+        {
+          "kind": "workStart",
+          "atSec": 245,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 267.5,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 290,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 305,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 327.5,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 350,
+          "rep": 6
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 365,
+          "rep": 7
+        },
+        {
+          "kind": "workStart",
+          "atSec": 365,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 387.5,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 410,
+          "rep": 7
+        },
+        {
+          "kind": "workStart",
+          "atSec": 425,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 447.5,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 470,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 485,
+          "rep": 9
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 507.5,
+          "rep": 9
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 530,
+          "rep": 9
+        },
+        {
+          "kind": "workStart",
+          "atSec": 545,
+          "rep": 10
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 567.5,
+          "rep": 10
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 590,
+          "rep": 10
+        },
+        {
+          "kind": "workStart",
+          "atSec": 605,
+          "rep": 11
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 627.5,
+          "rep": 11
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 650,
+          "rep": 11
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 665,
+          "rep": 12
+        },
+        {
+          "kind": "workStart",
+          "atSec": 665,
+          "rep": 12
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 687.5,
+          "rep": 12
+        },
+        {
+          "kind": "outro",
+          "atSec": 710,
+          "rep": 12
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 710,
+          "rep": 12
+        }
+      ],
+      "accent": "#4cc9f0"
+    },
+    {
+      "slug": "classic-hiit-45-15--house",
+      "title": "12 × 45s / 15s — House",
+      "preset": "classic-hiit-45-15",
+      "presetSummary": "12 rounds of 45s work / 15s rest",
+      "structure": {
+        "label": "12 × 45s / 15s",
+        "kind": "hiit",
+        "workSec": 45,
+        "restSec": 15,
+        "reps": 12,
+        "continuous": false
+      },
+      "durationSec": 731.25,
+      "style": "house",
+      "styleLabel": "House",
+      "bpm": 128,
+      "snapped": true,
+      "key": "D dorian",
+      "music": "dirt",
+      "seed": 1517355519,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/classic-hiit-45-15--house.mp3",
+        "bytes": 11701229,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "5fa8e976f1f16393f4fccbecec5690d923e0948e164e1dd402cae7ebb118f0f0"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 5.625
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 5.625,
+          "endSec": 50.625
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 50.625,
+          "endSec": 65.625
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 65.625,
+          "endSec": 110.625
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 110.625,
+          "endSec": 125.625
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 125.625,
+          "endSec": 170.625
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 170.625,
+          "endSec": 185.625
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 185.625,
+          "endSec": 230.625
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 230.625,
+          "endSec": 245.625
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 245.625,
+          "endSec": 290.625
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 290.625,
+          "endSec": 305.625
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 305.625,
+          "endSec": 350.625
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 350.625,
+          "endSec": 365.625
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 365.625,
+          "endSec": 410.625
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 410.625,
+          "endSec": 425.625
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 425.625,
+          "endSec": 470.625
+        },
+        {
+          "kind": "rest",
+          "rep": 8,
+          "startSec": 470.625,
+          "endSec": 485.625
+        },
+        {
+          "kind": "work",
+          "rep": 9,
+          "startSec": 485.625,
+          "endSec": 530.625
+        },
+        {
+          "kind": "rest",
+          "rep": 9,
+          "startSec": 530.625,
+          "endSec": 545.625
+        },
+        {
+          "kind": "work",
+          "rep": 10,
+          "startSec": 545.625,
+          "endSec": 590.625
+        },
+        {
+          "kind": "rest",
+          "rep": 10,
+          "startSec": 590.625,
+          "endSec": 605.625
+        },
+        {
+          "kind": "work",
+          "rep": 11,
+          "startSec": 605.625,
+          "endSec": 650.625
+        },
+        {
+          "kind": "rest",
+          "rep": 11,
+          "startSec": 650.625,
+          "endSec": 665.625
+        },
+        {
+          "kind": "work",
+          "rep": 12,
+          "startSec": 665.625,
+          "endSec": 710.625
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 710.625,
+          "endSec": 731.25
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 2.625,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3.625,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4.625,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 5.625,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 28.125,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 50.625,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 65.625,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 88.125,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 110.625,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 125.625,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 148.125,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 170.625,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 185.625,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 208.125,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 230.625,
+          "rep": 4
+        },
+        {
+          "kind": "workStart",
+          "atSec": 245.625,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 268.125,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 290.625,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 305.625,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 328.125,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 350.625,
+          "rep": 6
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 365.625,
+          "rep": 7
+        },
+        {
+          "kind": "workStart",
+          "atSec": 365.625,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 388.125,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 410.625,
+          "rep": 7
+        },
+        {
+          "kind": "workStart",
+          "atSec": 425.625,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 448.125,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 470.625,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 485.625,
+          "rep": 9
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 508.125,
+          "rep": 9
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 530.625,
+          "rep": 9
+        },
+        {
+          "kind": "workStart",
+          "atSec": 545.625,
+          "rep": 10
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 568.125,
+          "rep": 10
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 590.625,
+          "rep": 10
+        },
+        {
+          "kind": "workStart",
+          "atSec": 605.625,
+          "rep": 11
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 628.125,
+          "rep": 11
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 650.625,
+          "rep": 11
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 665.625,
+          "rep": 12
+        },
+        {
+          "kind": "workStart",
+          "atSec": 665.625,
+          "rep": 12
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 688.125,
+          "rep": 12
+        },
+        {
+          "kind": "outro",
+          "atSec": 710.625,
+          "rep": 12
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 710.625,
+          "rep": 12
+        }
+      ],
+      "accent": "#f72585"
+    },
+    {
+      "slug": "classic-hiit-45-15--dnb",
+      "title": "12 × 45s / 15s — Drum and bass",
+      "preset": "classic-hiit-45-15",
+      "presetSummary": "12 rounds of 45s work / 15s rest",
+      "structure": {
+        "label": "12 × 45s / 15s",
+        "kind": "hiit",
+        "workSec": 45,
+        "restSec": 15,
+        "reps": 12,
+        "continuous": false
+      },
+      "durationSec": 730.909,
+      "style": "dnb",
+      "styleLabel": "Drum and bass",
+      "bpm": 176,
+      "snapped": true,
+      "key": "F minor",
+      "music": "dirt",
+      "seed": 1495767191,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/classic-hiit-45-15--dnb.mp3",
+        "bytes": 11695795,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "5c2dd3838cb5baadff851599590417a3ea898440b9d12b6c54aac71147c3cff4"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 5.455
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 5.455,
+          "endSec": 50.455
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 50.455,
+          "endSec": 65.455
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 65.455,
+          "endSec": 110.455
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 110.455,
+          "endSec": 125.455
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 125.455,
+          "endSec": 170.455
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 170.455,
+          "endSec": 185.455
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 185.455,
+          "endSec": 230.455
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 230.455,
+          "endSec": 245.455
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 245.455,
+          "endSec": 290.455
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 290.455,
+          "endSec": 305.455
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 305.455,
+          "endSec": 350.455
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 350.455,
+          "endSec": 365.455
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 365.455,
+          "endSec": 410.455
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 410.455,
+          "endSec": 425.455
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 425.455,
+          "endSec": 470.455
+        },
+        {
+          "kind": "rest",
+          "rep": 8,
+          "startSec": 470.455,
+          "endSec": 485.455
+        },
+        {
+          "kind": "work",
+          "rep": 9,
+          "startSec": 485.455,
+          "endSec": 530.455
+        },
+        {
+          "kind": "rest",
+          "rep": 9,
+          "startSec": 530.455,
+          "endSec": 545.455
+        },
+        {
+          "kind": "work",
+          "rep": 10,
+          "startSec": 545.455,
+          "endSec": 590.455
+        },
+        {
+          "kind": "rest",
+          "rep": 10,
+          "startSec": 590.455,
+          "endSec": 605.455
+        },
+        {
+          "kind": "work",
+          "rep": 11,
+          "startSec": 605.455,
+          "endSec": 650.455
+        },
+        {
+          "kind": "rest",
+          "rep": 11,
+          "startSec": 650.455,
+          "endSec": 665.455
+        },
+        {
+          "kind": "work",
+          "rep": 12,
+          "startSec": 665.455,
+          "endSec": 710.455
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 710.455,
+          "endSec": 730.909
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 2.455,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3.455,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4.455,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 5.455,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 27.955,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 50.455,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 65.455,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 87.955,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 110.455,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 125.455,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 147.955,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 170.455,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 185.455,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 207.955,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 230.455,
+          "rep": 4
+        },
+        {
+          "kind": "workStart",
+          "atSec": 245.455,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 267.955,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 290.455,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 305.455,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 327.955,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 350.455,
+          "rep": 6
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 365.455,
+          "rep": 7
+        },
+        {
+          "kind": "workStart",
+          "atSec": 365.455,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 387.955,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 410.455,
+          "rep": 7
+        },
+        {
+          "kind": "workStart",
+          "atSec": 425.455,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 447.955,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 470.455,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 485.455,
+          "rep": 9
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 507.955,
+          "rep": 9
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 530.455,
+          "rep": 9
+        },
+        {
+          "kind": "workStart",
+          "atSec": 545.455,
+          "rep": 10
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 567.955,
+          "rep": 10
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 590.455,
+          "rep": 10
+        },
+        {
+          "kind": "workStart",
+          "atSec": 605.455,
+          "rep": 11
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 627.955,
+          "rep": 11
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 650.455,
+          "rep": 11
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 665.455,
+          "rep": 12
+        },
+        {
+          "kind": "workStart",
+          "atSec": 665.455,
+          "rep": 12
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 687.955,
+          "rep": 12
+        },
+        {
+          "kind": "outro",
+          "atSec": 710.455,
+          "rep": 12
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 710.455,
+          "rep": 12
+        }
+      ],
+      "accent": "#4361ee"
+    },
+    {
+      "slug": "classic-hiit-45-15--house-chill",
+      "title": "12 × 45s / 15s — House chill",
+      "preset": "classic-hiit-45-15",
+      "presetSummary": "12 rounds of 45s work / 15s rest",
+      "structure": {
+        "label": "12 × 45s / 15s",
+        "kind": "hiit",
+        "workSec": 45,
+        "restSec": 15,
+        "reps": 12,
+        "continuous": false
+      },
+      "durationSec": 730.909,
+      "style": "house-chill",
+      "styleLabel": "House chill",
+      "bpm": 176,
+      "snapped": true,
+      "key": "G minor",
+      "music": "dirt",
+      "seed": 1342622758,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/classic-hiit-45-15--house-chill.mp3",
+        "bytes": 11695795,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "d0579d29b82cd78c60d970c5dcc1f9c23763e1961989c008fc6b6c538baa15d3"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 5.455
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 5.455,
+          "endSec": 50.455
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 50.455,
+          "endSec": 65.455
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 65.455,
+          "endSec": 110.455
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 110.455,
+          "endSec": 125.455
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 125.455,
+          "endSec": 170.455
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 170.455,
+          "endSec": 185.455
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 185.455,
+          "endSec": 230.455
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 230.455,
+          "endSec": 245.455
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 245.455,
+          "endSec": 290.455
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 290.455,
+          "endSec": 305.455
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 305.455,
+          "endSec": 350.455
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 350.455,
+          "endSec": 365.455
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 365.455,
+          "endSec": 410.455
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 410.455,
+          "endSec": 425.455
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 425.455,
+          "endSec": 470.455
+        },
+        {
+          "kind": "rest",
+          "rep": 8,
+          "startSec": 470.455,
+          "endSec": 485.455
+        },
+        {
+          "kind": "work",
+          "rep": 9,
+          "startSec": 485.455,
+          "endSec": 530.455
+        },
+        {
+          "kind": "rest",
+          "rep": 9,
+          "startSec": 530.455,
+          "endSec": 545.455
+        },
+        {
+          "kind": "work",
+          "rep": 10,
+          "startSec": 545.455,
+          "endSec": 590.455
+        },
+        {
+          "kind": "rest",
+          "rep": 10,
+          "startSec": 590.455,
+          "endSec": 605.455
+        },
+        {
+          "kind": "work",
+          "rep": 11,
+          "startSec": 605.455,
+          "endSec": 650.455
+        },
+        {
+          "kind": "rest",
+          "rep": 11,
+          "startSec": 650.455,
+          "endSec": 665.455
+        },
+        {
+          "kind": "work",
+          "rep": 12,
+          "startSec": 665.455,
+          "endSec": 710.455
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 710.455,
+          "endSec": 730.909
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 2.455,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3.455,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4.455,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 5.455,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 27.955,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 50.455,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 65.455,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 87.955,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 110.455,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 125.455,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 147.955,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 170.455,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 185.455,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 207.955,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 230.455,
+          "rep": 4
+        },
+        {
+          "kind": "workStart",
+          "atSec": 245.455,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 267.955,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 290.455,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 305.455,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 327.955,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 350.455,
+          "rep": 6
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 365.455,
+          "rep": 7
+        },
+        {
+          "kind": "workStart",
+          "atSec": 365.455,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 387.955,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 410.455,
+          "rep": 7
+        },
+        {
+          "kind": "workStart",
+          "atSec": 425.455,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 447.955,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 470.455,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 485.455,
+          "rep": 9
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 507.955,
+          "rep": 9
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 530.455,
+          "rep": 9
+        },
+        {
+          "kind": "workStart",
+          "atSec": 545.455,
+          "rep": 10
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 567.955,
+          "rep": 10
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 590.455,
+          "rep": 10
+        },
+        {
+          "kind": "workStart",
+          "atSec": 605.455,
+          "rep": 11
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 627.955,
+          "rep": 11
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 650.455,
+          "rep": 11
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 665.455,
+          "rep": 12
+        },
+        {
+          "kind": "workStart",
+          "atSec": 665.455,
+          "rep": 12
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 687.955,
+          "rep": 12
+        },
+        {
+          "kind": "outro",
+          "atSec": 710.455,
+          "rep": 12
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 710.455,
+          "rep": 12
+        }
+      ],
+      "accent": "#06d6a0"
+    },
+    {
+      "slug": "classic-hiit-45-15--dark-dubstep-dnb",
+      "title": "12 × 45s / 15s — Dark dubstep / drum and bass",
+      "preset": "classic-hiit-45-15",
+      "presetSummary": "12 rounds of 45s work / 15s rest",
+      "structure": {
+        "label": "12 × 45s / 15s",
+        "kind": "hiit",
+        "workSec": 45,
+        "restSec": 15,
+        "reps": 12,
+        "continuous": false
+      },
+      "durationSec": 730.909,
+      "style": "dark-dubstep-dnb",
+      "styleLabel": "Dark dubstep / drum and bass",
+      "bpm": 176,
+      "snapped": true,
+      "key": "E phrygian",
+      "music": "dirt",
+      "seed": 423249562,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/classic-hiit-45-15--dark-dubstep-dnb.mp3",
+        "bytes": 11695795,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "7d9d10c53431b412504b9083ca4341fffb1a805d01e0f64fbe9019bde6dac8b1"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 5.455
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 5.455,
+          "endSec": 50.455
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 50.455,
+          "endSec": 65.455
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 65.455,
+          "endSec": 110.455
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 110.455,
+          "endSec": 125.455
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 125.455,
+          "endSec": 170.455
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 170.455,
+          "endSec": 185.455
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 185.455,
+          "endSec": 230.455
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 230.455,
+          "endSec": 245.455
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 245.455,
+          "endSec": 290.455
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 290.455,
+          "endSec": 305.455
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 305.455,
+          "endSec": 350.455
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 350.455,
+          "endSec": 365.455
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 365.455,
+          "endSec": 410.455
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 410.455,
+          "endSec": 425.455
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 425.455,
+          "endSec": 470.455
+        },
+        {
+          "kind": "rest",
+          "rep": 8,
+          "startSec": 470.455,
+          "endSec": 485.455
+        },
+        {
+          "kind": "work",
+          "rep": 9,
+          "startSec": 485.455,
+          "endSec": 530.455
+        },
+        {
+          "kind": "rest",
+          "rep": 9,
+          "startSec": 530.455,
+          "endSec": 545.455
+        },
+        {
+          "kind": "work",
+          "rep": 10,
+          "startSec": 545.455,
+          "endSec": 590.455
+        },
+        {
+          "kind": "rest",
+          "rep": 10,
+          "startSec": 590.455,
+          "endSec": 605.455
+        },
+        {
+          "kind": "work",
+          "rep": 11,
+          "startSec": 605.455,
+          "endSec": 650.455
+        },
+        {
+          "kind": "rest",
+          "rep": 11,
+          "startSec": 650.455,
+          "endSec": 665.455
+        },
+        {
+          "kind": "work",
+          "rep": 12,
+          "startSec": 665.455,
+          "endSec": 710.455
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 710.455,
+          "endSec": 730.909
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 2.455,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3.455,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4.455,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 5.455,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 27.955,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 50.455,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 65.455,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 87.955,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 110.455,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 125.455,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 147.955,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 170.455,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 185.455,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 207.955,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 230.455,
+          "rep": 4
+        },
+        {
+          "kind": "workStart",
+          "atSec": 245.455,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 267.955,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 290.455,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 305.455,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 327.955,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 350.455,
+          "rep": 6
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 365.455,
+          "rep": 7
+        },
+        {
+          "kind": "workStart",
+          "atSec": 365.455,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 387.955,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 410.455,
+          "rep": 7
+        },
+        {
+          "kind": "workStart",
+          "atSec": 425.455,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 447.955,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 470.455,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 485.455,
+          "rep": 9
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 507.955,
+          "rep": 9
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 530.455,
+          "rep": 9
+        },
+        {
+          "kind": "workStart",
+          "atSec": 545.455,
+          "rep": 10
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 567.955,
+          "rep": 10
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 590.455,
+          "rep": 10
+        },
+        {
+          "kind": "workStart",
+          "atSec": 605.455,
+          "rep": 11
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 627.955,
+          "rep": 11
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 650.455,
+          "rep": 11
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 665.455,
+          "rep": 12
+        },
+        {
+          "kind": "workStart",
+          "atSec": 665.455,
+          "rep": 12
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 687.955,
+          "rep": 12
+        },
+        {
+          "kind": "outro",
+          "atSec": 710.455,
+          "rep": 12
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 710.455,
+          "rep": 12
+        }
+      ],
+      "accent": "#b5179e"
+    },
+    {
+      "slug": "sprint-30-15--techno",
+      "title": "8 × 30s / 15s — Techno",
+      "preset": "sprint-30-15",
+      "presetSummary": "8 rounds of 30s work / 15s rest",
+      "structure": {
+        "label": "8 × 30s / 15s",
+        "kind": "sprint",
+        "workSec": 30,
+        "restSec": 15,
+        "reps": 8,
+        "continuous": false
+      },
+      "durationSec": 365,
+      "style": "techno",
+      "styleLabel": "Techno",
+      "bpm": 144,
+      "snapped": true,
+      "key": "A minor",
+      "music": "dirt",
+      "seed": 913681675,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/sprint-30-15--techno.mp3",
+        "bytes": 5841023,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "1ff555e8c7a07bcddda042feb8e0038c9d161a9e2d1e7a7ccda85d785d22cbca"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 5
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 5,
+          "endSec": 35
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 35,
+          "endSec": 50
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 50,
+          "endSec": 80
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 80,
+          "endSec": 95
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 95,
+          "endSec": 125
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 125,
+          "endSec": 140
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 140,
+          "endSec": 170
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 170,
+          "endSec": 185
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 185,
+          "endSec": 215
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 215,
+          "endSec": 230
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 230,
+          "endSec": 260
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 260,
+          "endSec": 275
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 275,
+          "endSec": 305
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 305,
+          "endSec": 320
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 320,
+          "endSec": 350
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 350,
+          "endSec": 365
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 2,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 5,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 20,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 35,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 50,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 65,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 80,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 95,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 110,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 125,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 140,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 155,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 170,
+          "rep": 4
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 185,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 185,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 200,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 215,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 230,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 245,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 260,
+          "rep": 6
+        },
+        {
+          "kind": "workStart",
+          "atSec": 275,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 290,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 305,
+          "rep": 7
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 320,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 320,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 335,
+          "rep": 8
+        },
+        {
+          "kind": "outro",
+          "atSec": 350,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 350,
+          "rep": 8
+        }
+      ],
+      "accent": "#4cc9f0"
+    },
+    {
+      "slug": "sprint-30-15--dnb",
+      "title": "8 × 30s / 15s — Drum and bass",
+      "preset": "sprint-30-15",
+      "presetSummary": "8 rounds of 30s work / 15s rest",
+      "structure": {
+        "label": "8 × 30s / 15s",
+        "kind": "sprint",
+        "workSec": 30,
+        "restSec": 15,
+        "reps": 8,
+        "continuous": false
+      },
+      "durationSec": 365.455,
+      "style": "dnb",
+      "styleLabel": "Drum and bass",
+      "bpm": 176,
+      "snapped": true,
+      "key": "F minor",
+      "music": "dirt",
+      "seed": 1167916926,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/sprint-30-15--dnb.mp3",
+        "bytes": 5848546,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "eabd7f45311d52ca209d09b809c8f9e42aef4dd75ca2d84db94d9cee37813d67"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 5.455
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 5.455,
+          "endSec": 35.455
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 35.455,
+          "endSec": 50.455
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 50.455,
+          "endSec": 80.455
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 80.455,
+          "endSec": 95.455
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 95.455,
+          "endSec": 125.455
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 125.455,
+          "endSec": 140.455
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 140.455,
+          "endSec": 170.455
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 170.455,
+          "endSec": 185.455
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 185.455,
+          "endSec": 215.455
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 215.455,
+          "endSec": 230.455
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 230.455,
+          "endSec": 260.455
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 260.455,
+          "endSec": 275.455
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 275.455,
+          "endSec": 305.455
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 305.455,
+          "endSec": 320.455
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 320.455,
+          "endSec": 350.455
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 350.455,
+          "endSec": 365.455
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 2.455,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3.455,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4.455,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 5.455,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 20.455,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 35.455,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 50.455,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 65.455,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 80.455,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 95.455,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 110.455,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 125.455,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 140.455,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 155.455,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 170.455,
+          "rep": 4
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 185.455,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 185.455,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 200.455,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 215.455,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 230.455,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 245.455,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 260.455,
+          "rep": 6
+        },
+        {
+          "kind": "workStart",
+          "atSec": 275.455,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 290.455,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 305.455,
+          "rep": 7
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 320.455,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 320.455,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 335.455,
+          "rep": 8
+        },
+        {
+          "kind": "outro",
+          "atSec": 350.455,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 350.455,
+          "rep": 8
+        }
+      ],
+      "accent": "#4361ee"
+    },
+    {
+      "slug": "steady-30-30--techno",
+      "title": "8 × 30s / 30s — Techno",
+      "preset": "steady-30-30",
+      "presetSummary": "8 rounds of 30s work / 30s rest",
+      "structure": {
+        "label": "8 × 30s / 30s",
+        "kind": "steady",
+        "workSec": 30,
+        "restSec": 30,
+        "reps": 8,
+        "continuous": false
+      },
+      "durationSec": 470,
+      "style": "techno",
+      "styleLabel": "Techno",
+      "bpm": 144,
+      "snapped": true,
+      "key": "A minor",
+      "music": "dirt",
+      "seed": 2063121622,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/steady-30-30--techno.mp3",
+        "bytes": 7521219,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "679585341eb711ef5494ec90a00cdfeb2763cbbd416bf9ffc0d92f4ef4a9c084"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 5
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 5,
+          "endSec": 35
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 35,
+          "endSec": 65
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 65,
+          "endSec": 95
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 95,
+          "endSec": 125
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 125,
+          "endSec": 155
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 155,
+          "endSec": 185
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 185,
+          "endSec": 215
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 215,
+          "endSec": 245
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 245,
+          "endSec": 275
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 275,
+          "endSec": 305
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 305,
+          "endSec": 335
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 335,
+          "endSec": 365
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 365,
+          "endSec": 395
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 395,
+          "endSec": 425
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 425,
+          "endSec": 455
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 455,
+          "endSec": 470
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 2,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 5,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 20,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 35,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 65,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 80,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 95,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 125,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 140,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 155,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 185,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 200,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 215,
+          "rep": 4
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 245,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 245,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 260,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 275,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 305,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 320,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 335,
+          "rep": 6
+        },
+        {
+          "kind": "workStart",
+          "atSec": 365,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 380,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 395,
+          "rep": 7
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 425,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 425,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 440,
+          "rep": 8
+        },
+        {
+          "kind": "outro",
+          "atSec": 455,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 455,
+          "rep": 8
+        }
+      ],
+      "accent": "#4cc9f0"
+    },
+    {
+      "slug": "steady-30-30--house",
+      "title": "8 × 30s / 30s — House",
+      "preset": "steady-30-30",
+      "presetSummary": "8 rounds of 30s work / 30s rest",
+      "structure": {
+        "label": "8 × 30s / 30s",
+        "kind": "steady",
+        "workSec": 30,
+        "restSec": 30,
+        "reps": 8,
+        "continuous": false
+      },
+      "durationSec": 472,
+      "style": "house",
+      "styleLabel": "House",
+      "bpm": 120,
+      "snapped": true,
+      "key": "D dorian",
+      "music": "dirt",
+      "seed": 1090938891,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/steady-30-30--house.mp3",
+        "bytes": 7552984,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "4bba478d7e8e191e005c06a31dbc9f1be9b7fb98e8235e474ae279f5447623eb"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 6
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 6,
+          "endSec": 36
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 36,
+          "endSec": 66
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 66,
+          "endSec": 96
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 96,
+          "endSec": 126
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 126,
+          "endSec": 156
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 156,
+          "endSec": 186
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 186,
+          "endSec": 216
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 216,
+          "endSec": 246
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 246,
+          "endSec": 276
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 276,
+          "endSec": 306
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 306,
+          "endSec": 336
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 336,
+          "endSec": 366
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 366,
+          "endSec": 396
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 396,
+          "endSec": 426
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 426,
+          "endSec": 456
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 456,
+          "endSec": 472
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 5,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 6,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 21,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 36,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 66,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 81,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 96,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 126,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 141,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 156,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 186,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 201,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 216,
+          "rep": 4
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 246,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 246,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 261,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 276,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 306,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 321,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 336,
+          "rep": 6
+        },
+        {
+          "kind": "workStart",
+          "atSec": 366,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 381,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 396,
+          "rep": 7
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 426,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 426,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 441,
+          "rep": 8
+        },
+        {
+          "kind": "outro",
+          "atSec": 456,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 456,
+          "rep": 8
+        }
+      ],
+      "accent": "#f72585"
+    },
+    {
+      "slug": "steady-30-30--dnb",
+      "title": "8 × 30s / 30s — Drum and bass",
+      "preset": "steady-30-30",
+      "presetSummary": "8 rounds of 30s work / 30s rest",
+      "structure": {
+        "label": "8 × 30s / 30s",
+        "kind": "steady",
+        "workSec": 30,
+        "restSec": 30,
+        "reps": 8,
+        "continuous": false
+      },
+      "durationSec": 470.455,
+      "style": "dnb",
+      "styleLabel": "Drum and bass",
+      "bpm": 176,
+      "snapped": true,
+      "key": "F minor",
+      "music": "dirt",
+      "seed": 1627310093,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/steady-30-30--dnb.mp3",
+        "bytes": 7528324,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "0c1811a69d72ea567b10a559a29f918e1064649a8b55f7414322cd3909571363"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 5.455
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 5.455,
+          "endSec": 35.455
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 35.455,
+          "endSec": 65.455
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 65.455,
+          "endSec": 95.455
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 95.455,
+          "endSec": 125.455
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 125.455,
+          "endSec": 155.455
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 155.455,
+          "endSec": 185.455
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 185.455,
+          "endSec": 215.455
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 215.455,
+          "endSec": 245.455
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 245.455,
+          "endSec": 275.455
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 275.455,
+          "endSec": 305.455
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 305.455,
+          "endSec": 335.455
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 335.455,
+          "endSec": 365.455
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 365.455,
+          "endSec": 395.455
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 395.455,
+          "endSec": 425.455
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 425.455,
+          "endSec": 455.455
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 455.455,
+          "endSec": 470.455
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 2.455,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3.455,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4.455,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 5.455,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 20.455,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 35.455,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 65.455,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 80.455,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 95.455,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 125.455,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 140.455,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 155.455,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 185.455,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 200.455,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 215.455,
+          "rep": 4
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 245.455,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 245.455,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 260.455,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 275.455,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 305.455,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 320.455,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 335.455,
+          "rep": 6
+        },
+        {
+          "kind": "workStart",
+          "atSec": 365.455,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 380.455,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 395.455,
+          "rep": 7
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 425.455,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 425.455,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 440.455,
+          "rep": 8
+        },
+        {
+          "kind": "outro",
+          "atSec": 455.455,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 455.455,
+          "rep": 8
+        }
+      ],
+      "accent": "#4361ee"
+    },
+    {
+      "slug": "bells-only-45-15--bells-only",
+      "title": "8 × 45s / 15s — Bells only",
+      "preset": "bells-only-45-15",
+      "presetSummary": "bells and voice only, no music engine",
+      "structure": {
+        "label": "8 × 45s / 15s",
+        "kind": "bells",
+        "workSec": 45,
+        "restSec": 15,
+        "reps": 8,
+        "continuous": false
+      },
+      "durationSec": 485,
+      "style": "bells-only",
+      "styleLabel": "Bells only",
+      "bpm": 120,
+      "snapped": false,
+      "key": null,
+      "music": "dirt",
+      "seed": 171769198,
+      "label": "interval workout",
+      "audio": {
+        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261018/bells-only-45-15--bells-only.mp3",
+        "bytes": 7761128,
+        "bitrate": 128,
+        "mime": "audio/mpeg",
+        "sha256": "edeabc48dc86ae1c357e9082ddf810e066bfb5a61375980b541ceae69c3425ba"
+      },
+      "segments": [
+        {
+          "kind": "leadIn",
+          "rep": 0,
+          "startSec": 0,
+          "endSec": 5
+        },
+        {
+          "kind": "work",
+          "rep": 1,
+          "startSec": 5,
+          "endSec": 50
+        },
+        {
+          "kind": "rest",
+          "rep": 1,
+          "startSec": 50,
+          "endSec": 65
+        },
+        {
+          "kind": "work",
+          "rep": 2,
+          "startSec": 65,
+          "endSec": 110
+        },
+        {
+          "kind": "rest",
+          "rep": 2,
+          "startSec": 110,
+          "endSec": 125
+        },
+        {
+          "kind": "work",
+          "rep": 3,
+          "startSec": 125,
+          "endSec": 170
+        },
+        {
+          "kind": "rest",
+          "rep": 3,
+          "startSec": 170,
+          "endSec": 185
+        },
+        {
+          "kind": "work",
+          "rep": 4,
+          "startSec": 185,
+          "endSec": 230
+        },
+        {
+          "kind": "rest",
+          "rep": 4,
+          "startSec": 230,
+          "endSec": 245
+        },
+        {
+          "kind": "work",
+          "rep": 5,
+          "startSec": 245,
+          "endSec": 290
+        },
+        {
+          "kind": "rest",
+          "rep": 5,
+          "startSec": 290,
+          "endSec": 305
+        },
+        {
+          "kind": "work",
+          "rep": 6,
+          "startSec": 305,
+          "endSec": 350
+        },
+        {
+          "kind": "rest",
+          "rep": 6,
+          "startSec": 350,
+          "endSec": 365
+        },
+        {
+          "kind": "work",
+          "rep": 7,
+          "startSec": 365,
+          "endSec": 410
+        },
+        {
+          "kind": "rest",
+          "rep": 7,
+          "startSec": 410,
+          "endSec": 425
+        },
+        {
+          "kind": "work",
+          "rep": 8,
+          "startSec": 425,
+          "endSec": 470
+        },
+        {
+          "kind": "coolDown",
+          "rep": 0,
+          "startSec": 470,
+          "endSec": 485
+        }
+      ],
+      "cues": [
+        {
+          "kind": "intro",
+          "atSec": 0,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 2,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 3,
+          "rep": null
+        },
+        {
+          "kind": "countdown",
+          "atSec": 4,
+          "rep": null
+        },
+        {
+          "kind": "workStart",
+          "atSec": 5,
+          "rep": 1
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 27.5,
+          "rep": 1
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 50,
+          "rep": 1
+        },
+        {
+          "kind": "workStart",
+          "atSec": 65,
+          "rep": 2
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 87.5,
+          "rep": 2
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 110,
+          "rep": 2
+        },
+        {
+          "kind": "workStart",
+          "atSec": 125,
+          "rep": 3
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 147.5,
+          "rep": 3
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 170,
+          "rep": 3
+        },
+        {
+          "kind": "workStart",
+          "atSec": 185,
+          "rep": 4
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 207.5,
+          "rep": 4
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 230,
+          "rep": 4
+        },
+        {
+          "kind": "trackHalfway",
+          "atSec": 245,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 245,
+          "rep": 5
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 267.5,
+          "rep": 5
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 290,
+          "rep": 5
+        },
+        {
+          "kind": "workStart",
+          "atSec": 305,
+          "rep": 6
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 327.5,
+          "rep": 6
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 350,
+          "rep": 6
+        },
+        {
+          "kind": "workStart",
+          "atSec": 365,
+          "rep": 7
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 387.5,
+          "rep": 7
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 410,
+          "rep": 7
+        },
+        {
+          "kind": "finalRound",
+          "atSec": 425,
+          "rep": 8
+        },
+        {
+          "kind": "workStart",
+          "atSec": 425,
+          "rep": 8
+        },
+        {
+          "kind": "intervalMidpoint",
+          "atSec": 447.5,
+          "rep": 8
+        },
+        {
+          "kind": "outro",
+          "atSec": 470,
+          "rep": 8
+        },
+        {
+          "kind": "workEnd",
+          "atSec": 470,
+          "rep": 8
+        }
+      ],
+      "accent": "#f4a261"
+    }
+  ]
+}

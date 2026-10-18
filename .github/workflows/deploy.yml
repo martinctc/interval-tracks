@@ -1,0 +1,35 @@
+name: Deploy to Pages
+
+# The site is three static files and a manifest. Rendering stays in the generator
+# repo (`interval-track-maker`) and never runs here: it needs Chromium, ffmpeg and
+# the TTS weights. Audio is not in this repository either -- `tracks.json` points
+# at immutable Release assets, so the pages stay a few KB no matter how many
+# tracks are published.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

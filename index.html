@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d1117">
+  <title>Interval Tracks</title>
+  <meta name="description" content="Generated interval-workout tracks: pick an interval structure and a genre, press play.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Interval Tracks</h1>
+    <p class="tagline">Generated workout audio. Pick a structure, pick a genre, press play.</p>
+  </header>
+
+  <section class="filters" aria-label="Filters">
+    <div class="filter-row">
+      <label class="field">
+        <span>Length</span>
+        <select id="f-duration">
+          <option value="all">Any</option>
+          <option value="short">Under 10 min</option>
+          <option value="mid">10–20 min</option>
+          <option value="long">20 min +</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>Genre</span>
+        <select id="f-genre"><option value="all">Any</option></select>
+      </label>
+      <label class="field">
+        <span>Intervals</span>
+        <select id="f-kind"><option value="all">Any</option></select>
+      </label>
+      <label class="field">
+        <span>Sort</span>
+        <select id="f-sort">
+          <option value="default">Default</option>
+          <option value="duration">Shortest first</option>
+          <option value="bpm">Fastest first</option>
+        </select>
+      </label>
+    </div>
+    <p id="count" class="count" aria-live="polite"></p>
+  </section>
+
+  <main>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="empty" hidden>No tracks match these filters.</p>
+  </main>
+
+  <footer class="foot">
+    <p>Audio generated from code. <span id="generated"></span></p>
+  </footer>
+
+  <div id="player" class="player" hidden>
+    <div id="phase" class="phase">
+      <span id="phase-kind" class="phase-kind">GET READY</span>
+      <span id="phase-count" class="phase-count">0:00</span>
+      <span id="phase-round" class="phase-round"></span>
+    </div>
+    <div class="transport">
+      <button id="prev" class="ctl" type="button" aria-label="Previous track">⏮</button>
+      <button id="back15" class="ctl" type="button" aria-label="Back 15 seconds">−15</button>
+      <button id="toggle" class="ctl play" type="button" aria-label="Play">▶</button>
+      <button id="fwd15" class="ctl" type="button" aria-label="Forward 15 seconds">+15</button>
+      <button id="next" class="ctl" type="button" aria-label="Next track">⏭</button>
+    </div>
+    <div class="scrub">
+      <input id="seek" class="seek" type="range" min="0" max="0" value="0" step="0.1" aria-label="Seek">
+      <div class="times"><span id="t-cur">0:00</span><span id="t-dur">0:00</span></div>
+    </div>
+    <div id="now" class="now"></div>
+    <audio id="audio" preload="metadata"></audio>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
