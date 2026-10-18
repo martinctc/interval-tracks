@@ -20,16 +20,6 @@ const tDur = document.getElementById('t-dur');
 const toggleBtn = document.getElementById('toggle');
 const nowEl = document.getElementById('now');
 
-const KIND_LABELS = {
-  hiit: 'HIIT',
-  tabata: 'Tabata',
-  emom: 'EMOM',
-  sprint: 'Sprint',
-  long: 'Long',
-  bells: 'Bells',
-  custom: 'Custom',
-};
-
 const state = {
   tracks: [],
   view: [],
@@ -67,7 +57,11 @@ async function init() {
     : '';
 
   populateSelect('f-genre', unique(state.tracks.map((t) => t.styleLabel)));
-  populateSelect('f-kind', unique(state.tracks.map((t) => t.structure.kind)), KIND_LABELS);
+  // Built from the shapes actually present, not from a table of preset names. It
+  // used to list the catalogue's `kind` values, which named training disciplines
+  // ("HIIT", "Tabata", "Sprint") — the opposite of what D2 asks for, and not what
+  // the cards show. If a preset's intervals ever change, this follows.
+  populateSelect('f-kind', unique(state.tracks.map(shapeLabel)));
 
   for (const id of ['f-duration', 'f-genre', 'f-kind', 'f-sort']) el(id).addEventListener('change', apply);
   wirePlayer();
@@ -105,7 +99,7 @@ function apply() {
     if (duration === 'mid' && (t.durationSec < 600 || t.durationSec >= 1200)) return false;
     if (duration === 'long' && t.durationSec < 1200) return false;
     if (genre !== 'all' && t.styleLabel !== genre) return false;
-    if (kind !== 'all' && t.structure.kind !== kind) return false;
+    if (kind !== 'all' && shapeLabel(t) !== kind) return false;
     return true;
   });
 
@@ -123,6 +117,23 @@ function renderGrid() {
   updateActiveCard();
 }
 
+/**
+ * "45/15" — the shape, in seconds, bare.
+ *
+ * The card shows this as its heading, and the filter names it "Work / rest (s)",
+ * so the unit is stated once for the whole page instead of on every card. The
+ * manifest's own `title` ("12 × 45s / 15s — Techno") is the stable identity of a
+ * track and stays as it is; nothing user-facing should print it verbatim, because
+ * it carries the genre that the card already shows in its chip.
+ */
+function shapeLabel(track) {
+  const { workSec, restSec } = track.structure;
+  // The manifest rounds to milliseconds, so whole values print as "45" and a
+  // genuine fraction such as 22.5 survives as "22.5". No unit: the filter that
+  // lists these values is labelled "Work / rest (s)".
+  return restSec > 0 ? `${workSec}/${restSec}` : `${workSec} continuous`;
+}
+
 function cardFor(track) {
   const card = document.createElement('article');
   card.className = 'card';
@@ -133,23 +144,45 @@ function cardFor(track) {
   head.className = 'card-head';
   const title = document.createElement('h2');
   title.className = 'card-title';
-  title.textContent = track.title;
+  title.textContent = shapeLabel(track);
+  // Five cards share the heading "45/15", so a screen reader would hear the same
+  // thing five times over. The genre is visually the chip; here it is for anyone
+  // not looking at it.
+  const forScreen = document.createElement('span');
+  forScreen.className = 'sr-only';
+  forScreen.textContent = `, ${track.styleLabel}`;
+  title.append(forScreen);
   const chip = document.createElement('span');
   chip.className = 'chip';
   chip.textContent = track.styleLabel;
   head.append(title, chip);
 
+  // One line, no labels: every item here is either a number or already reads as
+  // one. The old card also carried `presetSummary` ("12 rounds of 45s work / 15s
+  // rest"), which restated the heading in prose — rounds for a second time and
+  // the interval for a second time.
   const meta = document.createElement('div');
   meta.className = 'card-meta';
-  meta.append(
-    metaItem(`${fmtDuration(track.durationSec)}`, 'length'),
-    metaItem(`BPM ${track.bpm}${track.snapped ? '' : ' (forced)'}`, 'tempo'),
-    track.key ? metaItem(track.key, 'key') : metaItem(`${track.structure.reps} rounds`, 'rounds')
-  );
-
-  const sub = document.createElement('div');
-  sub.className = 'card-sub';
-  sub.textContent = track.presetSummary || track.structure.label;
+  const parts = [`${track.structure.reps} rounds`, fmtDuration(track.durationSec)];
+  // Bells-only has no music engine, so it has no tempo to report. It was showing
+  // "120 BPM forced", which reads as a tempo someone pinned; 120 is only the
+  // nominal bar length the cue arithmetic uses (snap.mjs NOMINAL_BPM).
+  if (track.style !== 'bells-only') {
+    parts.push(`${track.bpm} BPM${track.snapped ? '' : ' forced'}`);
+    if (track.key) parts.push(track.key);
+  }
+  parts.forEach((text, i) => {
+    if (i > 0) {
+      const sep = document.createElement('span');
+      sep.className = 'meta-sep';
+      sep.setAttribute('aria-hidden', 'true');
+      sep.textContent = '·';
+      meta.append(sep);
+    }
+    const item = document.createElement('span');
+    item.textContent = text;
+    meta.append(item);
+  });
 
   const play = document.createElement('button');
   play.className = 'card-play';
@@ -157,15 +190,8 @@ function cardFor(track) {
   play.dataset.play = track.slug;
   play.textContent = '▶ Play';
 
-  card.append(head, meta, sub, play);
+  card.append(head, meta, play);
   return card;
-}
-
-function metaItem(text, label) {
-  const span = document.createElement('span');
-  span.title = label;
-  span.textContent = text;
-  return span;
 }
 
 function wirePlayer() {
@@ -226,7 +252,10 @@ function playTrack(slug) {
   playerEl.hidden = false;
   audio.src = new URL(track.audio.url, document.baseURI).href;
   audio.play().catch(() => {});
-  nowEl.textContent = `${track.title} · ${track.styleLabel}`;
+  // Genre and shape, once each. This used to be `track.title · styleLabel`, which
+// printed "12 × 45s / 15s — Techno · Techno" — the genre twice, because the
+// manifest title already carries it.
+nowEl.textContent = `${track.styleLabel} · ${shapeLabel(track)}`;
   localStorage.setItem('itm.last', track.slug);
   setMediaSession(track);
   updateActiveCard();
@@ -301,9 +330,12 @@ function updateNav() {
 function setMediaSession(track) {
   if (!('mediaSession' in navigator)) return;
   navigator.mediaSession.metadata = new MediaMetadata({
-    title: track.title,
-    artist: 'Interval Tracks',
-    album: track.styleLabel,
+    // Lock screen shows title and artist side by side, so the shape belongs in the
+    // title and the genre in the artist slot — otherwise the two swap places and
+    // "Techno" ends up under "Interval Tracks".
+    title: `${track.styleLabel} · ${shapeLabel(track)}`,
+    artist: `${track.structure.reps} rounds`,
+    album: 'Interval Tracks',
   });
   const handlers = {
     play: () => audio.play(),

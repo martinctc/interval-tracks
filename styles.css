@@ -91,7 +91,20 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
 .card.playing { box-shadow: 0 0 0 1px var(--card-accent, var(--accent)) inset; }
 
 .card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; }
-.card-title { margin: 0; font-size: 1.05rem; }
+/*
+ * The card heading is the interval shape ("45/15"), not a sentence. It is the
+ * one thing that makes a column of cards line up, so it gets the size, the
+ * tabular figures that stop 45/15 and 30/15 jittering as the grid reflows, and a
+ * little negative tracking to sit the digits together.
+ */
+.card-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
 .chip {
   flex: none;
   font-size: 0.7rem;
@@ -102,23 +115,66 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
   border-radius: 999px;
   padding: 0.15rem 0.5rem;
 }
-.card-meta { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; color: var(--muted); font-size: 0.82rem; }
+/* One line of facts, separated by middots rather than labelled pairs: a card
+   that had to explain "length: 12:10" was three times the height for no gain. */
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.4rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
 .card-meta b { color: var(--ink); font-weight: 600; }
-.card-sub { color: var(--muted); font-size: 0.78rem; }
+.meta-sep { opacity: 0.45; }
 
+/* Visually hidden, still read: five cards share the heading "45/15". */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*
+ * Neutral until touched. The button used to take the card's accent colour, which
+ * meant five genres rendered five differently-coloured buttons and the grid read
+ * as a colour chart rather than as a list of choices — while the left border and
+ * the genre chip already say what the colour means. The accent now arrives on
+ * hover, focus and on the card that is playing, so colour marks the thing you are
+ * about to press rather than everything at once.
+ */
 .card-play {
   align-self: flex-start;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: var(--card-accent, var(--accent));
-  color: #08121a;
-  border: 0;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
   border-radius: 999px;
   padding: 0.5rem 1rem;
   font: inherit;
   font-weight: 700;
   cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+}
+.card:hover .card-play,
+.card-play:focus-visible {
+  background: var(--card-accent, var(--accent));
+  border-color: var(--card-accent, var(--accent));
+  color: #08121a;
+}
+.card.playing .card-play {
+  background: var(--card-accent, var(--accent));
+  border-color: var(--card-accent, var(--accent));
+  color: #08121a;
 }
 .card-play:active { transform: translateY(1px); }
 
