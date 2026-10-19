@@ -36,6 +36,11 @@
         "mime": "audio/mpeg",
         "sha256": "a4089ada61a7429ee11e66e5ecb4141da223b0802df5eade4fbf41aa23c43af8"
       },
+      "cover": {
+        "src": "covers/classic-hiit-45-15--techno.svg",
+        "bytes": 11560,
+        "url": "covers/classic-hiit-45-15--techno.svg"
+      },
       "segments": [
         {
           "kind": "leadIn",
@@ -435,6 +440,11 @@
         "bitrate": 128,
         "mime": "audio/mpeg",
         "sha256": "5fa8e976f1f16393f4fccbecec5690d923e0948e164e1dd402cae7ebb118f0f0"
+      },
+      "cover": {
+        "src": "covers/classic-hiit-45-15--house.svg",
+        "bytes": 11546,
+        "url": "covers/classic-hiit-45-15--house.svg"
       },
       "segments": [
         {
@@ -836,6 +846,11 @@
         "mime": "audio/mpeg",
         "sha256": "5c2dd3838cb5baadff851599590417a3ea898440b9d12b6c54aac71147c3cff4"
       },
+      "cover": {
+        "src": "covers/classic-hiit-45-15--dnb.svg",
+        "bytes": 11547,
+        "url": "covers/classic-hiit-45-15--dnb.svg"
+      },
       "segments": [
         {
           "kind": "leadIn",
@@ -1235,6 +1250,11 @@
         "bitrate": 128,
         "mime": "audio/mpeg",
         "sha256": "d0579d29b82cd78c60d970c5dcc1f9c23763e1961989c008fc6b6c538baa15d3"
+      },
+      "cover": {
+        "src": "covers/classic-hiit-45-15--house-chill.svg",
+        "bytes": 11559,
+        "url": "covers/classic-hiit-45-15--house-chill.svg"
       },
       "segments": [
         {
@@ -1636,6 +1656,11 @@
         "mime": "audio/mpeg",
         "sha256": "7d9d10c53431b412504b9083ca4341fffb1a805d01e0f64fbe9019bde6dac8b1"
       },
+      "cover": {
+        "src": "covers/classic-hiit-45-15--dark-dubstep-dnb.svg",
+        "bytes": 11554,
+        "url": "covers/classic-hiit-45-15--dark-dubstep-dnb.svg"
+      },
       "segments": [
         {
           "kind": "leadIn",
@@ -2036,6 +2061,11 @@
         "mime": "audio/mpeg",
         "sha256": "1ff555e8c7a07bcddda042feb8e0038c9d161a9e2d1e7a7ccda85d785d22cbca"
       },
+      "cover": {
+        "src": "covers/sprint-30-15--techno.svg",
+        "bytes": 11542,
+        "url": "covers/sprint-30-15--techno.svg"
+      },
       "segments": [
         {
           "kind": "leadIn",
@@ -2327,6 +2357,11 @@
         "bitrate": 128,
         "mime": "audio/mpeg",
         "sha256": "eabd7f45311d52ca209d09b809c8f9e42aef4dd75ca2d84db94d9cee37813d67"
+      },
+      "cover": {
+        "src": "covers/sprint-30-15--dnb.svg",
+        "bytes": 11550,
+        "url": "covers/sprint-30-15--dnb.svg"
       },
       "segments": [
         {
@@ -2620,6 +2655,11 @@
         "mime": "audio/mpeg",
         "sha256": "679585341eb711ef5494ec90a00cdfeb2763cbbd416bf9ffc0d92f4ef4a9c084"
       },
+      "cover": {
+        "src": "covers/steady-30-30--techno.svg",
+        "bytes": 11561,
+        "url": "covers/steady-30-30--techno.svg"
+      },
       "segments": [
         {
           "kind": "leadIn",
@@ -2911,6 +2951,11 @@
         "bitrate": 128,
         "mime": "audio/mpeg",
         "sha256": "4bba478d7e8e191e005c06a31dbc9f1be9b7fb98e8235e474ae279f5447623eb"
+      },
+      "cover": {
+        "src": "covers/steady-30-30--house.svg",
+        "bytes": 11561,
+        "url": "covers/steady-30-30--house.svg"
       },
       "segments": [
         {
@@ -3204,6 +3249,11 @@
         "mime": "audio/mpeg",
         "sha256": "0c1811a69d72ea567b10a559a29f918e1064649a8b55f7414322cd3909571363"
       },
+      "cover": {
+        "src": "covers/steady-30-30--dnb.svg",
+        "bytes": 11551,
+        "url": "covers/steady-30-30--dnb.svg"
+      },
       "segments": [
         {
           "kind": "leadIn",
@@ -3495,6 +3545,11 @@
         "bitrate": 128,
         "mime": "audio/mpeg",
         "sha256": "edeabc48dc86ae1c357e9082ddf810e066bfb5a61375980b541ceae69c3425ba"
+      },
+      "cover": {
+        "src": "covers/bells-only-45-15--bells-only.svg",
+        "bytes": 11554,
+        "url": "covers/bells-only-45-15--bells-only.svg"
       },
       "segments": [
         {

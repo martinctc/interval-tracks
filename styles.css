@@ -90,6 +90,21 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
 .card:hover { border-color: var(--card-accent, var(--accent)); }
 .card.playing { box-shadow: 0 0 0 1px var(--card-accent, var(--accent)) inset; }
 
+/*
+ * The cover is a square drawn from the track's spectrum, so it is square here
+ * too — a letterboxed crop of a radial burst reads as a smear. It sits above the
+ * text like an album sleeve; the card's own border and chip carry the identity,
+ * so the image never needs to be read.
+ */
+.card-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 0.5rem;
+  background: var(--panel-2);
+  object-fit: cover;
+}
+
 .card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; }
 /*
  * The card heading is the interval shape ("45/15"), not a sentence. It is the

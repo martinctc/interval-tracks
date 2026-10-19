@@ -140,6 +140,21 @@ function cardFor(track) {
   card.dataset.slug = track.slug;
   card.style.setProperty('--card-accent', track.accent || 'var(--accent)');
 
+  // The cover is drawn from the track's own spectrum. It is decorative: the
+  // heading and chip already name the track, so an empty alt keeps a screen
+  // reader from announcing a picture with nothing useful to say.
+  if (track.cover?.url) {
+    const cover = document.createElement('img');
+    cover.className = 'card-cover';
+    cover.src = track.cover.url;
+    cover.alt = '';
+    cover.loading = 'lazy';
+    cover.decoding = 'async';
+    cover.width = 512;
+    cover.height = 512;
+    card.append(cover);
+  }
+
   const head = document.createElement('div');
   head.className = 'card-head';
   const title = document.createElement('h2');
