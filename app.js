@@ -140,9 +140,14 @@ function cardFor(track) {
   card.dataset.slug = track.slug;
   card.style.setProperty('--card-accent', track.accent || 'var(--accent)');
 
+  const top = document.createElement('div');
+  top.className = 'card-top';
+
   // The cover is drawn from the track's own spectrum. It is decorative: the
   // heading and chip already name the track, so an empty alt keeps a screen
-  // reader from announcing a picture with nothing useful to say.
+  // reader from announcing a picture with nothing useful to say. It is a
+  // thumbnail, not a sleeve: a full-width square pushed the facts a whole
+  // screen down on a phone.
   if (track.cover?.url) {
     const cover = document.createElement('img');
     cover.className = 'card-cover';
@@ -150,9 +155,9 @@ function cardFor(track) {
     cover.alt = '';
     cover.loading = 'lazy';
     cover.decoding = 'async';
-    cover.width = 512;
-    cover.height = 512;
-    card.append(cover);
+    cover.width = 72;
+    cover.height = 72;
+    top.append(cover);
   }
 
   const head = document.createElement('div');
@@ -171,6 +176,7 @@ function cardFor(track) {
   chip.className = 'chip';
   chip.textContent = track.styleLabel;
   head.append(title, chip);
+  top.append(head);
 
   // One line, no labels: every item here is either a number or already reads as
   // one. The old card also carried `presetSummary` ("12 rounds of 45s work / 15s
@@ -205,7 +211,7 @@ function cardFor(track) {
   play.dataset.play = track.slug;
   play.textContent = '▶ Play';
 
-  card.append(head, meta, play);
+  card.append(top, meta, play);
   return card;
 }
 
