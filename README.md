@@ -37,11 +37,14 @@ This project is **three repos**, sitting side by side. Only this one is publishe
 | `interval-track-editor` | a mini Strudel editor for live-coding a groove by ear | no |
 | `interval-tracks` | **this repo** — the published website | **yes** |
 
-`interval-track-maker` copies the three site files plus a fresh `tracks.json` into
-here and pushes; nothing on the site is hand-edited. To change the audio, the
-speech or the mix, work **there** (its `docs/runbook.md` §4 is the publish/deploy
-runbook). To live-edit a groove by ear, use **`interval-track-editor`**. Come here
-only to change the site UI (`index.html` / `app.js` / `styles.css`).
+`interval-track-maker` copies the site files, a fresh `tracks.json`, the covers and
+the audio into here and pushes. The manifest, `audio/` and `covers/` are generated —
+regenerate them with `itm publish`, never by hand. The three UI files
+(`index.html` / `app.js` / `styles.css`) *are* edited here, so copy them back into
+the maker's `site/` before the next publish, which copies `site/` over its output
+and would otherwise overwrite them. To change the audio, the speech or the mix,
+work **there** (its `docs/runbook.md` §4 is the publish/deploy runbook). To
+live-edit a groove by ear, use **`interval-track-editor`**.
 
 Publishing is a local, manual step by design — rendering needs Playwright
 Chromium, ffmpeg and an 88 MB speech model, none of which belong in CI.
