@@ -256,13 +256,25 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
 .times { display: flex; gap: 0.5rem; color: var(--muted); font-size: 0.75rem; font-variant-numeric: tabular-nums; }
 .now { color: var(--muted); font-size: 0.78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
+/*
+ * A failed load used to be invisible: play() was rejected into an empty catch,
+ * the player sat at 0:00 and the page looked broken. Say what went wrong — on a
+ * phone there is no console to open.
+ */
+.player-error {
+  margin: 0;
+  color: #ff8fa3;
+  font-size: 0.78rem;
+}
+
 @media (min-width: 720px) {
   .player {
     grid-template-columns: 14rem 1fr;
     grid-template-areas:
       "phase transport"
       "phase scrub"
-      "now now";
+      "now now"
+      "error error";
     align-items: center;
     max-width: 72rem;
     margin: 0 auto;
@@ -273,6 +285,7 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
   .transport { grid-area: transport; }
   .scrub { grid-area: scrub; }
   .now { grid-area: now; }
+  .player-error { grid-area: error; }
 }
 
 @media (prefers-reduced-motion: reduce) {

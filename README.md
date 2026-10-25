@@ -14,12 +14,18 @@ Only the website, and deliberately so:
 | --- | --- |
 | `index.html`, `app.js`, `styles.css` | the whole app — vanilla, no build step, no framework |
 | `tracks.json` | the manifest: every card field, the filter inputs, and the segment/cue tables the player's WORK / REST readout runs off |
+| `audio/` | the rendered MP3s the manifest's `audio/<slug>.mp3` URLs resolve to |
+| `covers/` | generated cover art, referenced site-relative |
 
-There is **no audio in this repository**. `tracks.json` points at immutable
-[Release assets](https://github.com/martinctc/interval-tracks/releases), one
-`tracks-<date>` tag per publish, so a page load costs a few KB and every audio
-URL stays cacheable forever. Regenerating a track means publishing a new tag and
-updating the manifest, never re-uploading anything.
+The audio used to live on immutable [Release assets](https://github.com/martinctc/interval-tracks/releases),
+but **iOS cannot play those**: GitHub serves release files as
+`Content-Type: application/octet-stream` with `Content-Disposition: attachment`,
+and iOS WebKit (Safari *and* Chrome-on-iOS) refuses media with a non-audio type —
+desktop Chromium sniffs the bytes and plays it anyway, which is why the failure
+looked device-specific. The MP3s therefore ship with the site: GitHub Pages
+serves `.mp3` as `audio/mp3` with Range support, so the player streams and seeks
+normally on a phone. Regenerating a track still happens in `interval-track-maker`
+and lands here through `itm publish`; nothing is re-uploaded.
 
 ## Where it comes from
 

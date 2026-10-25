@@ -11,9 +11,9 @@ published** — GitHub Pages deploys `main` via `.github/workflows/deploy.yml`.
 
 ## Working here
 
-- `tracks.json`, `index.html`, `app.js`, `styles.css` and `covers/` are **produced
-  by `itm publish`** in `interval-track-maker` and copied in. Do **not** hand-edit
-  `tracks.json` — regenerate it in the maker repo and re-publish.
+- `tracks.json`, `index.html`, `app.js`, `styles.css`, `audio/` and `covers/` are
+  **produced by `itm publish`** in `interval-track-maker` and copied in. Do **not**
+  hand-edit `tracks.json` — regenerate it in the maker repo and re-publish.
 - To change the audio, the speech or the mix, work in **`interval-track-maker`**
   (its `docs/runbook.md` §4 is the publish/deploy runbook).
 - Come here only to change the **site UI** (`index.html` / `app.js` /

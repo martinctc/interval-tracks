@@ -1,10 +1,10 @@
 name: Deploy to Pages
 
-# The site is three static files and a manifest. Rendering stays in the generator
-# repo (`interval-track-maker`) and never runs here: it needs Chromium, ffmpeg and
-# the TTS weights. Audio is not in this repository either -- `tracks.json` points
-# at immutable Release assets, so the pages stay a few KB no matter how many
-# tracks are published.
+# The site is three static files, a manifest and the rendered audio. Rendering
+# stays in the generator repo (`interval-track-maker`) and never runs here: it
+# needs Chromium, ffmpeg and the TTS weights. The audio ships with the site
+# because iOS refuses Release assets (octet-stream + Content-Disposition), while
+# Pages serves .mp3 as audio/mp3 with Range support.
 on:
   push:
     branches: [main]

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-24T06:50:33.993Z",
+  "generatedAt": "2026-10-25T17:56:46.229Z",
   "app": {
     "name": "Interval Tracks",
     "repo": "martinctc/interval-tracks",
@@ -30,7 +30,7 @@
       "seed": 1498225208,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/classic-hiit-45-15--techno.mp3",
+        "url": "audio/classic-hiit-45-15--techno.mp3",
         "bytes": 11681167,
         "bitrate": 128,
         "mime": "audio/mpeg",
@@ -435,7 +435,7 @@
       "seed": 1517355519,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/classic-hiit-45-15--house.mp3",
+        "url": "audio/classic-hiit-45-15--house.mp3",
         "bytes": 11701229,
         "bitrate": 128,
         "mime": "audio/mpeg",
@@ -840,7 +840,7 @@
       "seed": 1495767191,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/classic-hiit-45-15--dnb.mp3",
+        "url": "audio/classic-hiit-45-15--dnb.mp3",
         "bytes": 11695795,
         "bitrate": 128,
         "mime": "audio/mpeg",
@@ -1245,7 +1245,7 @@
       "seed": 1342622758,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/classic-hiit-45-15--house-chill.mp3",
+        "url": "audio/classic-hiit-45-15--house-chill.mp3",
         "bytes": 11695795,
         "bitrate": 128,
         "mime": "audio/mpeg",
@@ -1650,7 +1650,7 @@
       "seed": 423249562,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/classic-hiit-45-15--dark-dubstep-dnb.mp3",
+        "url": "audio/classic-hiit-45-15--dark-dubstep-dnb.mp3",
         "bytes": 11695795,
         "bitrate": 128,
         "mime": "audio/mpeg",
@@ -2055,7 +2055,7 @@
       "seed": 913681675,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/sprint-30-15--techno.mp3",
+        "url": "audio/sprint-30-15--techno.mp3",
         "bytes": 5841023,
         "bitrate": 128,
         "mime": "audio/mpeg",
@@ -2352,7 +2352,7 @@
       "seed": 1167916926,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/sprint-30-15--dnb.mp3",
+        "url": "audio/sprint-30-15--dnb.mp3",
         "bytes": 5848546,
         "bitrate": 128,
         "mime": "audio/mpeg",
@@ -2649,7 +2649,7 @@
       "seed": 2063121622,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/steady-30-30--techno.mp3",
+        "url": "audio/steady-30-30--techno.mp3",
         "bytes": 7521219,
         "bitrate": 128,
         "mime": "audio/mpeg",
@@ -2946,7 +2946,7 @@
       "seed": 1090938891,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/steady-30-30--house.mp3",
+        "url": "audio/steady-30-30--house.mp3",
         "bytes": 7552984,
         "bitrate": 128,
         "mime": "audio/mpeg",
@@ -3243,7 +3243,7 @@
       "seed": 1627310093,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/steady-30-30--dnb.mp3",
+        "url": "audio/steady-30-30--dnb.mp3",
         "bytes": 7528324,
         "bitrate": 128,
         "mime": "audio/mpeg",
@@ -3540,7 +3540,7 @@
       "seed": 171769198,
       "label": "interval workout",
       "audio": {
-        "url": "https://github.com/martinctc/interval-tracks/releases/download/tracks-20261024/bells-only-45-15--bells-only.mp3",
+        "url": "audio/bells-only-45-15--bells-only.mp3",
         "bytes": 7761128,
         "bitrate": 128,
         "mime": "audio/mpeg",

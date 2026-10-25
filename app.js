@@ -19,6 +19,7 @@ const tCur = document.getElementById('t-cur');
 const tDur = document.getElementById('t-dur');
 const toggleBtn = document.getElementById('toggle');
 const nowEl = document.getElementById('now');
+const playerError = document.getElementById('player-error');
 
 const state = {
   tracks: [],
@@ -256,6 +257,8 @@ function wirePlayer() {
     updatePhase();
   });
   audio.addEventListener('ended', () => step(1));
+  audio.addEventListener('playing', clearPlayError);
+  audio.addEventListener('error', () => showPlayError(messageFor()));
 
   document.addEventListener('keydown', (event) => {
     if (event.target.matches('input, select, textarea')) return;
@@ -275,7 +278,35 @@ function wirePlayer() {
  * button that silently does nothing.
  */
 function startPlayback() {
-  audio.play().catch((err) => console.error('Audio playback error:', err));
+  audio.play().then(clearPlayError).catch((err) => {
+    console.error('Audio playback error:', err);
+    showPlayError(messageFor(err));
+  });
+}
+
+/** MediaError codes, plus the rejection a blocked autoplay produces. */
+function messageFor(err) {
+  switch (audio.error?.code) {
+    case 1: return 'Playback was aborted.';
+    case 2: return 'Network error while loading the audio — check your connection and try again.';
+    case 3: return 'The audio could not be decoded on this device.';
+    case 4: return 'This device could not load the audio file.';
+  }
+  if (err?.name === 'NotAllowedError') return 'Playback was blocked — tap play again.';
+  return 'The audio could not be played. Tap play to try again.';
+}
+
+function showPlayError(message) {
+  playerError.textContent = message;
+  playerError.hidden = false;
+  syncPlayerPad();
+}
+
+function clearPlayError() {
+  if (playerError.hidden) return;
+  playerError.textContent = '';
+  playerError.hidden = true;
+  syncPlayerPad();
 }
 
 function playTrack(slug) {
@@ -283,6 +314,7 @@ function playTrack(slug) {
   if (!track) return;
   state.current = track;
   playerEl.hidden = false;
+  clearPlayError();
   syncPlayerPad();
   audio.src = new URL(track.audio.url, document.baseURI).href;
   startPlayback();
