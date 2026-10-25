@@ -58,7 +58,7 @@ body {
   color: var(--ink);
   border: 1px solid var(--line);
   border-radius: 0.5rem;
-  padding: 0.5rem 0.6rem;
+  padding: 0.65rem 0.6rem;
   font: inherit;
   font-size: 0.9rem;
 }
@@ -177,7 +177,8 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
   color: var(--ink);
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 0.5rem 1rem;
+  /* 0.6rem vertical puts the pill just over the 44px minimum touch target. */
+  padding: 0.6rem 1rem;
   font: inherit;
   font-weight: 700;
   cursor: pointer;
@@ -210,6 +211,12 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
   display: grid;
   gap: 0.5rem;
 }
+/*
+ * The rule above outranks the user-agent sheet's `[hidden] { display: none }`
+ * (same specificity, later in cascade order), so an unstarted player sat on
+ * screen over the grid. State the hidden state explicitly instead.
+ */
+.player[hidden] { display: none; }
 .phase { display: flex; align-items: baseline; gap: 0.6rem; }
 .phase-kind {
   font-weight: 800;
@@ -227,8 +234,9 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
   color: var(--ink);
   border: 1px solid var(--line);
   border-radius: 0.5rem;
-  min-width: 2.6rem;
-  min-height: 2.6rem;
+  /* 2.75rem = 44px, the minimum comfortable touch target. */
+  min-width: 2.75rem;
+  min-height: 2.75rem;
   font: inherit;
   font-size: 1rem;
   cursor: pointer;
@@ -243,7 +251,8 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
 .ctl:disabled { opacity: 0.4; cursor: default; }
 
 .scrub { display: flex; align-items: center; gap: 0.6rem; }
-.seek { flex: 1; accent-color: var(--accent); }
+/* The native slider is only ~20px tall; height here widens the drag band. */
+.seek { flex: 1; height: 2.75rem; accent-color: var(--accent); }
 .times { display: flex; gap: 0.5rem; color: var(--muted); font-size: 0.75rem; font-variant-numeric: tabular-nums; }
 .now { color: var(--muted); font-size: 0.78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 

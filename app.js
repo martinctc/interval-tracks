@@ -225,7 +225,7 @@ function wirePlayer() {
     }
   });
 
-  toggleBtn.addEventListener('click', () => (audio.paused ? audio.play() : audio.pause()));
+  toggleBtn.addEventListener('click', () => (audio.paused ? startPlayback() : audio.pause()));
   document.getElementById('back15').addEventListener('click', () => skip(-15));
   document.getElementById('fwd15').addEventListener('click', () => skip(15));
   document.getElementById('prev').addEventListener('click', () => step(-1));
@@ -261,9 +261,21 @@ function wirePlayer() {
     if (event.target.matches('input, select, textarea')) return;
     if (event.code === 'Space') {
       event.preventDefault();
-      audio.paused ? audio.play() : audio.pause();
+      audio.paused ? startPlayback() : audio.pause();
     }
   });
+
+  window.addEventListener('resize', syncPlayerPad);
+}
+
+/**
+ * One place to start playback, so every entry point (card tap, toggle button,
+ * space bar) reports a failed play instead of leaving an unhandled rejection.
+ * On iOS a play() outside a user gesture rejects — seeing it here beats a
+ * button that silently does nothing.
+ */
+function startPlayback() {
+  audio.play().catch((err) => console.error('Audio playback error:', err));
 }
 
 function playTrack(slug) {
@@ -271,8 +283,9 @@ function playTrack(slug) {
   if (!track) return;
   state.current = track;
   playerEl.hidden = false;
+  syncPlayerPad();
   audio.src = new URL(track.audio.url, document.baseURI).href;
-  audio.play().catch(() => {});
+  startPlayback();
   // Genre and shape, once each. This used to be `track.title · styleLabel`, which
 // printed "12 × 45s / 15s — Techno · Techno" — the genre twice, because the
 // manifest title already carries it.
@@ -283,6 +296,24 @@ nowEl.textContent = `${track.styleLabel} · ${shapeLabel(track)}`;
   updateNav();
   updatePhase();
 }
+
+/**
+ * The player is `position: fixed`, so it covers whatever sits behind it. The
+ * stylesheet reserves a fixed 8.5rem at the bottom of the page, but on a phone
+ * the stacked player measures taller than that and a card's Play button ended
+ * up underneath it — a tap landed on the player instead of the button. Track
+ * the real height instead of guessing it.
+ *
+ * A ResizeObserver rather than a one-off measurement: the player grows again
+ * once updatePhase() fills the round label (it wraps on a narrow phone) and at
+ * the 720px layout switch, so padding has to follow every size change.
+ */
+function syncPlayerPad() {
+  document.body.style.paddingBottom = playerEl.hidden
+    ? ''
+    : `${playerEl.offsetHeight}px`;
+}
+if ('ResizeObserver' in window) new ResizeObserver(syncPlayerPad).observe(playerEl);
 
 function step(delta) {
   if (!state.current) return;
@@ -350,16 +381,20 @@ function updateNav() {
 
 function setMediaSession(track) {
   if (!('mediaSession' in navigator)) return;
-  navigator.mediaSession.metadata = new MediaMetadata({
-    // Lock screen shows title and artist side by side, so the shape belongs in the
-    // title and the genre in the artist slot — otherwise the two swap places and
-    // "Techno" ends up under "Interval Tracks".
-    title: `${track.styleLabel} · ${shapeLabel(track)}`,
-    artist: `${track.structure.reps} rounds`,
-    album: 'Interval Tracks',
-  });
+  try {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      // Lock screen shows title and artist side by side, so the shape belongs in the
+      // title and the genre in the artist slot — otherwise the two swap places and
+      // "Techno" ends up under "Interval Tracks".
+      title: `${track.styleLabel} · ${shapeLabel(track)}`,
+      artist: `${track.structure.reps} rounds`,
+      album: 'Interval Tracks',
+    });
+  } catch {
+    /* MediaMetadata missing; lock-screen art is a nicety, not worth a throw */
+  }
   const handlers = {
-    play: () => audio.play(),
+    play: () => startPlayback(),
     pause: () => audio.pause(),
     previoustrack: () => step(-1),
     nexttrack: () => step(1),
